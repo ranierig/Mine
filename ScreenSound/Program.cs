@@ -1,4 +1,4 @@
-﻿using ScreenSound.Modelos;
+using ScreenSound.Modelos;
 
 Banda Ira = new Banda("Ira");
 Banda TheBeatles = new("TheBeatels");
