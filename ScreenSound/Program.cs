@@ -1,17 +1,21 @@
-using ScreenSound.Modelos;
+﻿using ScreenSound.Model;
 
-Banda ira = new Banda("Ira");
-ira.AdicionarNota(10);
-ira.AdicionarNota(8);
-ira.AdicionarNota(9);
-Banda theBeatles = new("TheBeatels");
-Dictionary<string, Banda> bandasRegistradas = new();
-bandasRegistradas.Add(ira.Nome,ira); 
+Banda theBeatles = new("The Beatles");
+theBeatles.AdicionarNota(10);
+theBeatles.AdicionarNota(5);
+theBeatles.AdicionarNota(8);
+
+Banda titas = new("Titãs");
+titas.AdicionarNota(9);
+titas.AdicionarNota(8);
+
+Dictionary<string,Banda> bandasRegistradas = new Dictionary<string,Banda>();
 bandasRegistradas.Add(theBeatles.Nome,theBeatles);
+bandasRegistradas.Add(titas.Nome, titas);
 
-// Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
-// bandasRegistradas.Add("Linkin Park", new List<int> { 10, 8, 6 });
-// bandasRegistradas.Add("The Beatles", new List<int>());
+//Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
+//bandasRegistradas.Add("Linkin Park", new List<int> { 10, 8, 6 });
+//bandasRegistradas.Add("The Beatles", new List<int>());
 
 void ExibirLogo()
 {
@@ -91,7 +95,7 @@ void RegistrarBanda()
     Console.Write("Digite o nome da banda que deseja registrar: ");
     string nomeDaBanda = Console.ReadLine()!;
     Banda banda = new(nomeDaBanda);
-    bandasRegistradas.Add(banda.Nome, banda);
+    bandasRegistradas.Add(nomeDaBanda, banda);
     Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso!");
     Thread.Sleep(4000);
     Console.Clear();
@@ -134,9 +138,9 @@ void AvaliarUmaBanda()
     {
         Console.Write($"Qual a nota que a banda {nomeDaBanda} merece: ");
         int nota = int.Parse(Console.ReadLine()!);
-        //Banda banda = bandasRegistradas[nomeDaBanda];
-        //banda.AdicionarNota(nota);
-        bandasRegistradas[nomeDaBanda].AdicionarNota(nota);
+        Banda banda = new(nomeDaBanda);
+        banda.AdicionarNota(nota);
+        //bandasRegistradas[nomeDaBanda].Add(nota);
         Console.WriteLine($"\nA nota {nota} foi registrada com sucesso para a banda {nomeDaBanda}");
         Thread.Sleep(2000);
         Console.Clear();
@@ -162,9 +166,7 @@ void ExibirDetalhes()
     if (bandasRegistradas.ContainsKey(nomeDaBanda))
     {
         Banda banda = bandasRegistradas[nomeDaBanda];
-
         //List<int> notasDaBanda = bandasRegistradas[nomeDaBanda];
-
         Console.WriteLine($"\nA média da banda {nomeDaBanda} é {banda.Media}.");
         /**
         * ESPAÇO RESERVADO PARA COMPLETAR A FUNÇÃO
