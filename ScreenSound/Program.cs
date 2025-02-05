@@ -79,12 +79,19 @@ void RegistrarAlbum()
     string nomeDaBanda = Console.ReadLine()!;
     Console.Write("Agora digite o título do álbum: ");
     string tituloAlbum = Console.ReadLine()!;
-    /**
-     * ESPAÇO RESERVADO PARA COMPLETAR A FUNÇÃO
-     */
-    Console.WriteLine($"O álbum {tituloAlbum} de {nomeDaBanda} foi registrado com sucesso!");
-    Thread.Sleep(4000);
-    Console.Clear();
+    if (bandasRegistradas.ContainsKey(nomeDaBanda)) {
+        Banda banda = bandasRegistradas[nomeDaBanda];
+        banda.AdicionarAlbum(new Album(tituloAlbum));
+        Console.WriteLine($"O álbum {tituloAlbum} de {nomeDaBanda} foi registrado com sucesso!");
+        Thread.Sleep(4000);
+        Console.Clear();
+    } else {
+        Console.WriteLine($"\nA banda {nomeDaBanda} não foi encontrada!");
+        Console.WriteLine("Digite uma tecla para voltar ao menu principal");
+        Console.ReadKey();
+        Console.Clear();
+        ExibirOpcoesDoMenu();
+    }
     ExibirOpcoesDoMenu();
 }
 
@@ -94,7 +101,7 @@ void RegistrarBanda()
     ExibirTituloDaOpcao("Registro das bandas");
     Console.Write("Digite o nome da banda que deseja registrar: ");
     string nomeDaBanda = Console.ReadLine()!;
-    Banda banda = new(nomeDaBanda);
+    Banda banda = bandasRegistradas[nomeDaBanda];
     bandasRegistradas.Add(nomeDaBanda, banda);
     Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso!");
     Thread.Sleep(4000);
@@ -138,7 +145,7 @@ void AvaliarUmaBanda()
     {
         Console.Write($"Qual a nota que a banda {nomeDaBanda} merece: ");
         int nota = int.Parse(Console.ReadLine()!);
-        Banda banda = new(nomeDaBanda);
+        Banda banda = bandasRegistradas[nomeDaBanda];
         banda.AdicionarNota(nota);
         //bandasRegistradas[nomeDaBanda].Add(nota);
         Console.WriteLine($"\nA nota {nota} foi registrada com sucesso para a banda {nomeDaBanda}");
