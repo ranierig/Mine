@@ -9,7 +9,8 @@ internal class MenuAvaliarUmaBanda : TituloMenu {
         string nomeDaBanda = Console.ReadLine()!;
         if (bandasRegistradas.ContainsKey(nomeDaBanda)) {
             Console.Write($"Qual a nota que a banda {nomeDaBanda} merece: ");
-            int nota = int.Parse(Console.ReadLine()!);
+            // int nota = int.Parse(Console.ReadLine()!);
+            Avaliacao nota = Avaliacao.Parse(Console.ReadLine()!);
             bandasRegistradas[nomeDaBanda].AdicionarNota(nota);
             Console.WriteLine($"\nA nota {nota} foi registrada com sucesso para a banda {nomeDaBanda}");
             Thread.Sleep(2000);

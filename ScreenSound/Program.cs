@@ -4,14 +4,14 @@ using ScreenSound.Modelos;
 Dictionary<string, Banda> bandasRegistradas = new();
 
 Banda Ira = new("Ira");
-Ira.AdicionarNota(8);
-Ira.AdicionarNota(5);
-Ira.AdicionarNota(9);
+Ira.AdicionarNota(new Avaliacao(8));
+Ira.AdicionarNota(new Avaliacao(5));
+Ira.AdicionarNota(new Avaliacao(9));
 
 Banda IronMaiden = new("Iron Maiden");
-IronMaiden.AdicionarNota(10);
-IronMaiden.AdicionarNota(9);
-IronMaiden.AdicionarNota(10);
+IronMaiden.AdicionarNota(new Avaliacao(10));
+IronMaiden.AdicionarNota(new Avaliacao(9));
+IronMaiden.AdicionarNota(new Avaliacao(10));
 
 bandasRegistradas.Add(IronMaiden.Nome,IronMaiden);
 bandasRegistradas.Add(Ira.Nome,Ira);
