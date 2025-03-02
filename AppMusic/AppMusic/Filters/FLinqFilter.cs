@@ -1,6 +1,6 @@
 ﻿using AppMusic.Model;
-
 namespace AppMusic.Filters; 
+
 internal class FLinqFilter {
     public static void ShowGenres (List<MListMusics> mList) {
         var genres = mList.Select(genre => genre.Genre).Distinct().ToList();
