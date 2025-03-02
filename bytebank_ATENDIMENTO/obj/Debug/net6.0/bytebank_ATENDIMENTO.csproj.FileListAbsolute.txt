@@ -1,0 +1,15 @@
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\bin\Debug\net6.0\bytebank_ATENDIMENTO.exe
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\bin\Debug\net6.0\bytebank_ATENDIMENTO.deps.json
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\bin\Debug\net6.0\bytebank_ATENDIMENTO.runtimeconfig.json
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\bin\Debug\net6.0\bytebank_ATENDIMENTO.dll
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\bin\Debug\net6.0\bytebank_ATENDIMENTO.pdb
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\obj\Debug\net6.0\bytebank_ATENDIMENTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\obj\Debug\net6.0\bytebank_ATENDIMENTO.AssemblyInfoInputs.cache
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\obj\Debug\net6.0\bytebank_ATENDIMENTO.AssemblyInfo.cs
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\obj\Debug\net6.0\bytebank_ATENDIMENTO.csproj.CoreCompileInputs.cache
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\obj\Debug\net6.0\bytebank_ATENDIMENTO.sourcelink.json
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\obj\Debug\net6.0\bytebank_ATENDIMENTO.dll
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\obj\Debug\net6.0\refint\bytebank_ATENDIMENTO.dll
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\obj\Debug\net6.0\bytebank_ATENDIMENTO.pdb
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\obj\Debug\net6.0\bytebank_ATENDIMENTO.genruntimeconfig.cache
+C:\Users\Ranie\OneDrive\Estudos\SISTEMAS\ALURA\BACKEND\CCHARP\Mine\bytebank_ATENDIMENTO\obj\Debug\net6.0\ref\bytebank_ATENDIMENTO.dll
