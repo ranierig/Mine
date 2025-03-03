@@ -11,10 +11,21 @@ using (HttpClient httpClient = new() ) {
         //FLinqFilter.ShowGenres(musics);
         //FLinqFilter.ShowOrderByArtists(musics);
         //FLinqFilter.ShowArtistsGenre(musics,"Rock");
-        FLinqFilter.ShowMusicsArtists(musics, "U2");
+        //FLinqFilter.ShowMusicsArtists(musics, "U2");
+        MusicasPreferidas musicasRaniss = new("ranis");
+        musicasRaniss.AddMusicList(musics[2]);
+        musicasRaniss.AddMusicList(musics[3]);
+        musicasRaniss.AddMusicList(musics[235]);
+
+        string requestList = JsonSerializer.Serialize(musicasRaniss);
+        string caminhoArquivo = "c:\\temp\\arquivo.txt";
+        using (StreamWriter writer = new StreamWriter(caminhoArquivo)) {
+            writer.WriteLine(requestList);
+        }
+
     } catch (Exception ex) {
         Console.WriteLine($"Erro ao chamar a API de listas de músicas: {ex}");    
     }
 
-
 }
+
